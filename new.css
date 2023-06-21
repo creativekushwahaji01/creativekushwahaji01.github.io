@@ -283,6 +283,11 @@ in1 {
     -ms-flex-direction: column;
     flex-direction: column;
 }
+@media screen and (max-width: 768px) {
+    .intro2{
+        width: 100vw;
+    }
+}
 
 .in1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -352,10 +357,14 @@ in1 {
     min-height: 120px;
     min-width: 280px;
 }
-
+@media screen and (max-width: 768px) {
+    .image img {
+        width: 100vw;
+    }
+}
 .icon1 {
     margin-left: 0;
-    margin-top: -10px;
+    margin-top: -2px;
     display: flex;
     width: 50.21354166666664vw;
     min-width: 280px;
@@ -363,12 +372,17 @@ in1 {
     text-align: center;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:768px) {
     .icon1 {
-        margin-left: 4vw;
+        /* margin-left: 4vw; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
-
+@media screen and (main-width:400px) {
+    
+}
 .fa {
     text-decoration: none;
     border-radius: 20px;
