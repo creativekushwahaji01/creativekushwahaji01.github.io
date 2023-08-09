@@ -1,3 +1,7 @@
+*{
+  margin: 0px;
+  padding: 0%;
+}
 body{
   width: 100%;
   height: 100%;
@@ -69,8 +73,9 @@ body{
 }
 
 :root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
+  --card-height: auto;
+  /* --card-width: calc(var(--card-height) / 1.5); */
+  --card-width: 350px;
 }
 
 
@@ -82,7 +87,7 @@ body {
   background: #191c29;
   width: var(--card-width);
   height: var(--card-height);
-  padding: 3px;
+  padding: 12px 8px;
   position: relative;
   border-radius: 6px;
   justify-content: center;
@@ -127,7 +132,7 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 0 auto;
   transform: scale(0.8);
@@ -149,14 +154,49 @@ body {
   }
 }
 img{
-  width: 12rem;
+  width: auto;
   height: 15rem;
 }
 .image{
   display: flex;
   align-content: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card{
   margin: 15px;
+  display: block;
+  color: #ddd;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  /* font-size: 18px; */
+}
+.main h2{
+  color: #00afff;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+.main h3{
+  color: #006aff;
+  font-size: 25px;
+}
+/* .main p{
+  font-size: 18px;
+  font-family:  Calibri, 'Trebuchet MS', sans-serif
+} */
+.para1{
+  /* text-decoration: underline; */
+  text-transform: capitalize;
+  font-family: cursive;
+  font-size: 21px;
+}
+.para2{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #16F529;
+}
+img{
+  width: var(--card-width);
 }
