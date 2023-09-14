@@ -203,3 +203,90 @@ img{
 img{
   width: var(--card-width);
 }
+.fa {
+  text-decoration: none;
+  border-radius: 20px;
+  padding-top: 0.3em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-bottom: 0.9em;
+  width: 2.8645vw;
+  height: 1.30VW;
+  display: inline-flex;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  font-size: inherit;
+  font-size: 27px;
+  border-width: 0.5vw;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  border-style: outset;
+  border-color: #3B5998;
+  color: #3B5998;
+}
+
+.fa-twitter {
+  border-color: #55ACEE;
+  border-style: outset;
+  color: #55ACEE;
+}
+
+.fa-linkedin {
+  border-color: #007bb5;
+  color: #007bb5;
+  border-style: outset;
+}
+
+
+/* .ref2 svg {
+  margin-left: auto;
+} */
+
+.fa-youtube {
+  border-color: #bb0000;
+  color: #bb0000;
+  border-style: outset;
+}
+
+.fa-instagram {
+  background-image: linear-gradient(to bottom right, red, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  border-color: #fb39dd;
+  border-style: outset;
+}
+
+.fa-envelope {
+  background-image: linear-gradient(to bottom right, rgb(219, 37, 37), rgb(227, 168, 237));
+  background-clip: text;
+  color: transparent;
+  border-color: rgb(219, 37, 37);
+  -webkit-background-clip: text;
+  border-style: outset;
+}
+
+.fa-github {
+  border-color: rgb(140, 88, 196);
+  border-style: outset;
+}
+.footerhead{
+  display: flex;
+  justify-content: center;
+}
+.footerhead h1{
+  color: rgb(110, 219, 183);
+}
+.icon{
+  display: flex;
+  justify-content: space-around;
+}
+footer{
+  margin-top: 20px;
+}
