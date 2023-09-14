@@ -12,10 +12,15 @@ body{
   overflow: hidden;
   background-color: #333;
   position: sticky;
-  width: 100%;
+  width: 100%;x
+}
+@media screen and (min-width: 600px)
+{
+.topnav{
   display: flex;
   justify-content: space-between;
-}
+}}
+
 .topnav a {
   float: left;
   display: block;
