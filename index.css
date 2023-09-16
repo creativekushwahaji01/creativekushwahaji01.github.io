@@ -18,9 +18,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: wheat;
+    background-color: rgb(239, 223, 192);
     /* background-color: rgb(4, 11, 26); */
     /* color: whitesmoke; */
+}
+#myTopnav{
+    top: 0;
+    
 }
 
 .topnav {
@@ -29,6 +33,19 @@ body {
     position: sticky;
     width: 100%;
 }
+#myTopnav {
+    background-color: #333; 
+    transition: background-color 0.3s ease; 
+    /* height: 50px;  */
+}
+
+#myTopnav.sticky {
+    background-color: transparent; 
+    backdrop-filter: blur(10px);
+    margin-top: 5px;
+    border-bottom: 2px solid #333;
+}
+
 @media screen and (min-width: 600px)
 {
 .topnav{
