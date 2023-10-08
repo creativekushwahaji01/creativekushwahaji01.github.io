@@ -516,6 +516,7 @@ in1 {
     background-color: transparent; */
     color: rgb(39, 198, 221);
     background-color: rgb(9, 10, 23);
+    width: auto;
 }
 
 .fe:hover {
@@ -803,7 +804,7 @@ in1 {
     gap: 10px;
     justify-content: space-around;
     background-color: transparent;
-    background-image: linear-gradient(to bottom right, rgb(164, 154, 154), rgb(31, 28, 28));
+    background-image: linear-gradient(to bottom right, rgb(164, 154, 154), rgb(74, 60, 60));
     -webkit-box-align: center;
     width: 85vw;
     border-radius: 20px;
@@ -814,7 +815,9 @@ in1 {
 .cs {
     margin: 20px;
 }
-
+.cs img{
+    filter: drop-shadow(3px 1px 10px );
+}
 .loader {
     display: block;
     width: 13em;
@@ -887,6 +890,7 @@ in1 {
 .img1 {
     width: calc(20px + 5.4vw);
     height: calc(20px + 5.4vw);
+    filter: drop-shadow(3px 1px 7px #e6e6eb);
 }
 
 .otpcontent {
@@ -937,7 +941,7 @@ in1 {
 }
 
 .container {
-    display: flex;
+    /* display: flex; */
     /*   border:1px solid red; */
     height: 100%;
     align-items: center;
@@ -1036,6 +1040,18 @@ svg {
     width: 25.390625vw;
 }
 
-.ref2{
-    
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .container{
+    /* display: block; */
   }
