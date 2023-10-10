@@ -1004,7 +1004,7 @@ in1 {
 
 @media screen and (max-width: 895px) {
     .container {
-        display: none;
+        /* display: none; */
     }
 }
 
@@ -1041,17 +1041,17 @@ svg {
 }
 
 
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-  
-  .reveal.active{
-    transform: translateY(0);
-    opacity: 1;
-  }
-  .container{
-    /* display: block; */
-  }
+
+@media screen and (min-width:850px) {
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+      }
+      
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
