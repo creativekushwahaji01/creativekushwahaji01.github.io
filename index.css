@@ -1169,25 +1169,25 @@ svg {
         transform: translateY(0);
         opacity: 1;
       }
+      .roll-in-left {
+        opacity: 0;
+        transform: translateX(-800px) rotate(-540deg);
+        transition: opacity 1s, transform 1s;
+      }
+    
+      .roll-in-left .roll-in-active {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
+      .roll-from-right {
+        opacity: 0;
+        transform: translateX(800px) rotate(540deg);
+        transition: opacity 1s, transform 1s;
+      }
+    
+      .roll-from-right.roll-in-active {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+      }
 }
 
-  .roll-in-left {
-    opacity: 0;
-    transform: translateX(-800px) rotate(-540deg);
-    transition: opacity 1s, transform 1s;
-  }
-
-  .roll-in-left .roll-in-active {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
-  .roll-from-right {
-    opacity: 0;
-    transform: translateX(800px) rotate(540deg);
-    transition: opacity 1s, transform 1s;
-  }
-
-  .roll-from-right.roll-in-active {
-    opacity: 1;
-    transform: translateX(0) rotate(0deg);
-  }
