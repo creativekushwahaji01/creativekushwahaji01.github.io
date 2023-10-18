@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .roll-in-left {
+    opacity: 0;
+    transform: translateX(-800px) rotate(-540deg);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+
+  .roll-in-left.roll-in-active {
+    opacity: 1;
+    transform: translateX(0) rotate(0deg);
+  }
+</style>
+</head>
+<body>
+    <div class="lorem">
+        lore
+    </div>
+  <div class="roll-in-left reveal">
+    <img src="./indeximage/mysql.svg" alt="Mysql">
+  </div>
+  <div class="roll-in-left reveal">
+    <img src="./indeximage/next-js.svg" alt="Next js">
+  </div>
+  <div class="roll-in-left reveal">
+    <img src="./indeximage/nodejs.svg" alt="Node js">
+  </div>
+  <div class="roll-in-left reveal">
+    <img src="./indeximage/react.svg" alt="React Js">
+  </div>
+
+  <script>
+    function leftScroll() {
+      var reveals = document.querySelectorAll(".roll-in-left");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("roll-in-active");
+        } else {
+          reveals[i].classList.remove("roll-in-active");
+        }
+      }
+    }
+
+    // Initial check when the page loads
+    leftScroll();
+
+    // Check for elements in the viewport on scroll
+    window.addEventListener("scroll", leftScroll);
+  </script>
+</body>
+</html>
