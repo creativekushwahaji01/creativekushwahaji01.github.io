@@ -1357,3 +1357,17 @@ height: 80px;
   .biotext{
     margin-right: 3em;
   }
+  .self_img{
+    align-self: center;
+  }
+  @media screen and (max-width:700px){
+    .self_intro {
+        margin-bottom: -45px;
+      }
+    .anim{
+        display: none;
+    }
+  }
+  .language{
+    /* display: no; */
+  }

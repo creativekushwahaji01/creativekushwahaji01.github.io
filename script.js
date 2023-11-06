@@ -44,3 +44,35 @@ function reveal() {
       x.className = "topnav";
     }
   }
+
+  function generateLanguageProgressHTML(languages) {
+    let html = '';
+    console.log("it works")
+    for (const language of languages) {
+      const progressBarStyle = `width: ${languages.progress}%`;
+  
+      html += `
+        <div class="language-card">
+          <div class="language-name">${languages.name}</div>
+          <div class="progress-bar">
+            <div class="progress" style="${progressBarStyle}"></div>
+          </div>
+          <div class="language-image">${languages.imageSvg}</div>
+        </div>
+      `;
+    }
+    return html;
+  }
+  
+  // Example data
+  const languages = [
+    {
+      name: 'English',
+      progress: 80,
+      imageSvg: 'SVG code for English',
+    }
+  ];
+  
+  const languageProgressHTML = generateLanguageProgressHTML(languages);
+  document.getElementById("language-container").innerHTML = languageProgressHTML;
+  
