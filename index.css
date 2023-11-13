@@ -1211,7 +1211,10 @@ svg {
     width: 25.390625vw;
 }
 
-
+.bio_text {
+    font-size: 20px;
+  }
+  
 
 @media screen and (min-width:850px) {
     .reveal{
@@ -1367,7 +1370,20 @@ height: 80px;
     .anim{
         display: none;
     }
+    .biomain {
+        display: bl;
+        flex-wrap: wrap-reverse;
+      }
+    .bio_text{
+        font-size: 15px;
+    }
+    .image-swap-container{
+        height: 150px;
+    }
+    .image-swap-container img{
+        height: 150px;
+    }
   }
-  .language{
-    /* display: no; */
-  }
+ .bio_text{
+    text-align: justify;
+ }
