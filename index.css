@@ -452,6 +452,9 @@ in1 {
     .intro {
         width: 100%;
     }
+    .hed{
+        padding-top: 10px;
+    }
 }
 .text1 {
     display: inline;
@@ -690,6 +693,9 @@ in1 {
     width: auto;
 }
 
+.ref2 svg{
+    width: 25.390625vw;
+}
 .fe:hover {
     font-family: 'Alfa Slab One', cursive;
     font-family: 'Courgette', cursive;
@@ -1191,25 +1197,12 @@ in1 {
         text-align: center;
     }
 }
-
-.last {
-    border-color: royalblue;
-    border-style: inset;
-    border-radius: 20px;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 1.5vw;
-    background-image: linear-gradient(to bottom right, rgb(83, 2, 2), rgb(7, 18, 79));
+.biohead{
+    text-align: center;
+    font-size: calc(20px + 1.5vw);
+    margin: 1em 2em 0 2em;
 }
 
-.sunglasses {
-    display: none;
-    justify-content: center;
-}
-
-svg {
-    width: 25.390625vw;
-}
 
 .bio_text {
     font-size: 20px;
@@ -1356,7 +1349,14 @@ height: 80px;
     justify-content: space-around;
     margin: 7em;
     margin-bottom: 3em;
+    margin-top: 2em;
   }
+  .biohead {
+    background: linear-gradient(to right,#f0d7d7,#9f6fd9,#bfbfff);
+    color: transparent;
+    background-clip: text;
+  }
+  
   .biotext{
     margin-right: 3em;
   }
@@ -1378,10 +1378,18 @@ height: 80px;
         font-size: 15px;
     }
     .image-swap-container{
-        height: 150px;
+        height: auto ;
+        width: 80vw;
     }
     .image-swap-container img{
-        height: 150px;
+        height: calc( 60vw - 20px) ;
+        width: 60vw;
+    }
+  }
+  @media screen and (max-width:550px) {
+    .image-swap-container img{
+        height: calc( 80vw - 20px) ;
+        width: 80vw;
     }
   }
  .bio_text{
@@ -1390,6 +1398,7 @@ height: 80px;
 
  .language{
     margin: 7em;
+    margin-top: 2em;
  }
  .progress-container {
     width: 505px;
@@ -1446,3 +1455,4 @@ height: 80px;
         font-size: 12px;
     }
   }
+  
