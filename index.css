@@ -1114,7 +1114,7 @@ in1 {
 
 .last {
     margin: auto;
-    background-color: rgb(3, 3, 21);
+    background-color: transparent;
 }
 
 .container {
@@ -1180,8 +1180,8 @@ in1 {
 }
 
 @media screen and (max-width: 895px) {
-    .container {
-        /* display: none; */
+    .containerfooter {
+        display: none;
     }
 }
 
@@ -1355,6 +1355,7 @@ height: 80px;
     background: linear-gradient(to right,#f0d7d7,#9f6fd9,#bfbfff);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
   }
   
   .biotext{
@@ -1456,3 +1457,12 @@ height: 80px;
     }
   }
   
+  footer{
+    width: 90vw;
+    
+  }
+@media screen and (max-width:400px) {
+    .fa{
+        border: none;
+    }
+}
