@@ -8,7 +8,6 @@ header {
     color: hsl(180, 89%, 78%) transparent;
     display: block;
     position: sticky;
-    /*(recomended)*/
     top: 0;
     width: 100%;
     background-color: rgb(24, 24, 69);
@@ -1412,10 +1411,32 @@ height: 80px;
     background-color: #272b2b;
     margin: 0 5px;
   }
-
+ .html{
+    width: 95%;
+ }
+ .css{
+    width: 85%;
+ }
+ .javascript{
+    width: 75%;
+ }
+ .react{
+    width: 55%;
+ }
+ .mysql{
+    width: 80%;
+ }
+ .mongodb{
+    width: 70%;
+ }
+ .nodejs{
+    width: 60%;
+ }
+ .git{
+    width: 80%;
+ }
   .progress-bar {
     font-size: calc(12px + 0.8vw);
-    width: 75%;
     height: 30px;
     padding-left: 10px;
     border-radius: 20px;
