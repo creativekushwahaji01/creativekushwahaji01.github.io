@@ -1596,3 +1596,6 @@ height: 80px;
 ._nav_logo{
     margin-left: 2rem;
 }
+canvas{
+    display: none;
+}
